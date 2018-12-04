@@ -1,0 +1,38 @@
+<div class="login-page">
+    <div class="content">
+        <!-- <h1 class="app-name">Sb Admin Material</h1> -->
+        <form class="login-form" fxflex="" >
+            <div class="text-center">
+                <h2 class="app-name">Sistema de Autogestion de Comedores</h2>
+            </div>
+            <div fxflex="" fxlayout="row" fxlayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput placeholder="Nombre de usuario">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxflex="" fxLayout="row" fxLayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput type="password" placeholder="Password">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxflex="" fxLayout="row" fxLayout.lt-md="column" style="margin: 20px 0 30px 0">
+                <div fxFlex>
+                    <mat-checkbox color="primary">Recordar pass</mat-checkbox>
+                </div>
+                <div fxflex="" fxLayoutAlign="end">
+                    <a href="javascript:void(0)">Olvido su password</a>
+                </div>
+            </div>
+            <div fxflex="" fxLayout="row" fxLayout.lt-md="column">
+                <div fxFlexFill>
+                    <button mat-raised-button color="primary" class="w-100" (click)="onLogin()">Login</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
